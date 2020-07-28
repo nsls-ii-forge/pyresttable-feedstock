@@ -1,0 +1,40 @@
+{% set name = "pyRestTable" %}
+{% set version = "2020.0.2" %}
+{% set sha256 = "0fe62e32f9789820381d13c1382a013ae7e4adb0e6f4c4f871ad48d39d67089a" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+    - coverage
+    - coveralls
+    - docopt
+    - lxml
+
+test:
+  requires:
+    - pytest
+  commands:
+    - pytest --pyargs pyRestTable.tests
+
+about:
+  home: https://github.com/prjemian/pyRestTable
+  license: Creative Commons Attribution 4.0 International Public License (see file)
+  license_family: OTHER
+  license_file: LICENSE
+  summary: Format a nice table in reST (reStructuredText) from Python
