@@ -29,6 +29,6 @@ test:
 
 about:
   home: https://github.com/prjemian/pyRestTable
-  license: Creative Commons Attribution 4.0 International Public License (see file)
-  license_family: OTHER
+  license: CC-BY-4.0
+  license_file: src/{{ name }}/LICENSE.txt
   summary: Format a nice table in reST (reStructuredText) from Python
