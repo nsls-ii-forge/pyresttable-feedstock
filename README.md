@@ -3,7 +3,7 @@ About pyresttable
 
 Home: https://github.com/prjemian/pyRestTable
 
-Package license: Creative Commons Attribution 4.0 International Public License (see file)
+Package license: CC-BY-4.0
 
 Feedstock license: BSD-3-Clause
 
