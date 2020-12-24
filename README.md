@@ -5,11 +5,9 @@ Home: https://github.com/prjemian/pyRestTable
 
 Package license: CC-BY-4.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/pyresttable-feedstock/blob/master/LICENSE.txt)
 
 Summary: Format a nice table in reST (reStructuredText) from Python
-
-
 
 Current build status
 ====================
